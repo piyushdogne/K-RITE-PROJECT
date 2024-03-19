@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@100;300;400;700;900&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Rethink Sans";
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+body{
+    font-size: 96%;
+}
+.main-container{
+    margin: 1%;
+    padding: .5%;
+    min-width: 98vw;
+    min-height: 94vh;
+    /* background-color: rgb(176, 220, 220); */
+    border-radius: .9rem; 
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 9fr;
+}
+ .grid-2 , .grid-3 {
+    /* background-color: antiquewhite; */
+    margin: .5%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+}
+.grid-1{
+    grid-row-start: 1;
+    grid-row-end: 12;
+    display: grid;
+    grid-template-rows: 1fr 2fr 5fr 2fr;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;}
+.g1-head-branding{
+    margin: .5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.5%;
+}
+.branding{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 75%;
+    max-height: 80%;
+    font-size: .8rem;
+}
+.branding-logo-1 img{
+    border-radius: 20%;
+}
+.branding-logo-2 img{
+    border-radius: 50%;
+}
+.g1-team-section{
+    display: flex;
+    flex-direction: column;
+    margin: .5%;
+    padding: 4%;
+    gap: .3rem;
+
+}
+.team-1 , .team-2 , .team-3 , .create-team{
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+    cursor: pointer;
+    min-height: 24%;
+    border-radius: .3rem;
+}
+.team-1:hover , .team-2:hover , .team-3:hover , .create-team:hover {
+    background-color: rgb(194, 201, 203 , .3);
+    transition: all ease .4s;
+}
+.g1-folders{
+    min-height: 24%;
+    border-radius: .3rem;
+    margin: .5%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+}
+
+.folder-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2%;
+    font-size: 80%;
+}
+.folder-head p {
+    font-weight: 900;
+}
+
+.folder{
+    padding-left: 5%;
+    display: flex;
+    gap: 1%;
+    align-items: center;
+    cursor: pointer;
+}
+
+.folder-1 , .folder-2 , .folder-3{
+    display: flex;
+    justify-content: space-between;
+}
+.fa-caret-down , .fa-caret-up{ 
+    padding-right: 2.5%;
+}
+
+.folder-1-drop.unactive , .folder-2-drop.unactive , .folder-3-drop.unactive{
+    display: none;
+}
+
+.folder-1-drop ul , .folder-2-drop ul , .folder-3-drop ul{
+    list-style-type: none;
+    width: 80%;
+    opacity: 1;
+}
+ul li{
+    border-radius: .4rem;
+}
+ul li:hover{
+    background-color: rgb(194, 201, 203 , .3);
+    transition: all ease .4s;
+}
+.g1-extras{
+    margin: .5%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 14%;
+}
+.help  , .invite{
+    cursor: pointer;
+}
+.trial{
+    cursor: pointer;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: .4rem;
+    max-width: 90%;
+    min-height: 38%;
+    background-color: rgb(194, 201, 203 , .3);
+}
+.trial button{
+    min-width: 30%;
+    min-height: 100%;
+    background-color: rgb(9, 141, 236);
+    color: white;
+    border: none;
+    border-radius: .3rem;
+}
+
+.light-shade{
+    color: gray;
+}
+
+.grid-2{
+    display: flex;
+    justify-content: space-between;
+    padding: .5%;
+    padding-right: 2%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.g2-search-chat-gear{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 27%;
+    min-height: 80%;
+}
+
+.search-bar{
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    min-width: 60%;
+    min-height: 70%;
+    border-radius: .3rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    cursor: pointer;
+}
+.search-bar input{
+    max-width: 85%;
+    border: none;
+    outline: none;
+}
+
+.chat , .gear{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70%;
+    min-width: 10%;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: .3rem;
+    cursor: pointer;
+}
+ 
+
+.controls{
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+    min-height: 10%;
+}
+
+.controls-1 , .controls-2 , .desk , .allbrands , .sort , .filter , .tags{
+    display: flex;
+}
+
+.controls-1{
+    min-width: 54%;
+    max-height: 19%;
+    justify-content: space-evenly;
+}
+.desk , .allbrands , .sort , .filter , .tags{
+    min-width: 19%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: .3rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    cursor: pointer;
+}
+.desk , .sort , .filter , .tags{
+    min-width: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.allbrands{
+    justify-content: space-around;
+}
+
+.controls-2{
+    min-width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.meeting , .import{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    min-width: 27%;
+    min-height: 20%;
+    background-color: white;
+    border-radius: .3rem;
+    cursor: pointer;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+}
+
+
+table {
+    font-size: 80%;
+    border-collapse:collapse;
+    padding:5px;
+    margin: auto;
+    align-self: center;
+}
+.demTable th {
+    text-align: left;
+    padding:5px;
+}
+.demTable td {
+    text-align:center;
+    padding:5px;
+}
+
+
+.demTable th:nth-child(1){
+    width: 15%;
+}
+.demTable tr td:nth-child(1){
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+.demTable tr {
+    height: 2.5rem;
+}
+
+
+ tr:nth-child(even){background-color: #f2f2f2;}
+
+.hashtags{
+    height: 10%;
+    width: 20%;
+    color: aqua;
+}
